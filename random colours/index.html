@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <style>
+        body{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            padding: 10px;
+            text-transform: capitalize;
+            size: 30px;
+            font-size: 1.5rem;
+            outline: none;
+            color: sandybrown;    
+        }
+        .btn:hover{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" class="btn">
+        Click Me!
+    </button>
+    <script>
+        const button = document.
+            querySelector('.btn');
+        const bodyback = document.
+            querySelector('body');
+        const colors = ['yellow','black', 'red','green','purple','blue','pink','cyan','orange','brown'];
+        button.addEventListener('click',changecolor);
+        function changecolor(){
+            let random = Math.floor(Math.random()*colors.length)
+            bodyback.style.backgroundColor=colors[random];
+        }
+    </script>
+    
+</body>
+</html>
